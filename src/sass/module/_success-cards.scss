@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.success-cards {
+    margin-top: rem(68);
+    @include mq(md) {
+        margin-top: rem(94);
+    }
+}
+
+.success-card {
+    border-radius: rem(15);
+    background-color: #FEFEFE;
+    padding:rem(20);
+    box-shadow: rem(2) rem(4) rem(10) rem(2) rgba(0, 0, 0, 0.25);
+    margin-right: rem(40);
+
+    img {
+        height:100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    @include mq(md) {
+        width:rem(780);
+        padding:rem(60) rem(30);
+        margin-right:rem(125);
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.success-card__img {
+    width:rem(294);
+    margin-left: auto;
+    margin-right: auto;
+    height:rem(242);
+    @include mq(md) {
+        width:rem(320);
+        height:auto;
+    }
+}
+
+.success-card a {
+    justify-content: center;
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.success-card__text {
+    font-size: rem(24);
+    font-weight: $bold;
+    line-height: 1.8;
+    margin-top: rem(171);
+    margin-bottom: rem(142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq(md) {
+        margin-right: rem(30);
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.slide-arrow {
+    width:rem(40);
+    height:rem(40);
+    position: absolute;
+    bottom:rem(-56);
+    z-index: 50;
+    @include mq(md) {
+      bottom:rem(-66);
+    }
+  }
+
+  .prev-arrow {
+    left:23%;
+    @include mq(md) {
+      left:40%;
+    }
+  }
+
+  .next-arrow {
+    right:23%;
+    @include mq(md) {
+      right:40%;
+    }
+  }
+
+  .slick-dots {
+    bottom:rem(-46);
+    
+    @include mq(md) {
+        bottom:rem(-56);
+    }
+  }
+
+  .slick-dots li.slick-active button:before {
+    color:$main;
+  }

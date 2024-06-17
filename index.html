@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>TITAN</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="icon" href="/images/common/favicon.ico" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/styles.css">
+ <!-- font awesome-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+ <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__left">
+      <h1 class="header__logo">
+        <a href="">
+          <img src="/images/common/TITAN-logo1.svg" alt="TITAN">
+        </a>
+      </h1>
+      <nav class="header__nav header-nav js-drawer" id="header-nav">
+        <ul class="header-nav__items">
+          <li class="header-nav__item">
+            <a href="#about">TITANとは</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#point">ポイント</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#feature">機能</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#success">導入事例</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#plan">ご利用について</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#faq">よくある質問</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__right">
+        <div class="header-nav__contents u-desktop">
+          <div class="header-nav__content">
+            <div class="header-nav__content--item">
+              <div class="header-nav__content--wrap">
+                <div class="header-nav__content--icon">
+              <img src="/images/common/tel.png" alt="電話のアイコン">
+            </div>
+             <div class="header-nav__content--tel">
+              <a href="tel:050-5499-3014">050-5499-3014</a>
+              <p>受付時間 平日：10:00〜18:00</p>
+             </div>
+            </div>
+            </div>
+            <div class="header-nav__contact">
+              <div class="btn btn-contact">
+                <a href="https://forms.gle/w9KUTrYCgfQRexJLA" target="_blank" class="btn-contact__child"><span>お問い合せする</span></a>
+              </div>
+              <a href="https://forms.gle/w9KUTrYCgfQRexJLA" target="_blank" class="btn btn-trial">0円プランで始める</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button class="header__hamburger hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  </header>
+
+  <main class="main">
+    <div class="fv">
+      <div class="fv__wrapper">
+        <div class="fv__inner inner">
+          <div class="fv__contents">
+            <div class="fv__content">
+        <div class="fv__tittle">
+          <picture>
+            <source srcset="./images/common/fv-text.png" media="(min-width:768px)" />
+            <img src="./images/common/fv-img-sp.png" alt="飲食店の集客実績2000店舗以上の	
+            オールフィットが開発・運用！">
+          </picture>
+      </div>
+      <div class="fv__img u-desktop">
+        <img src="./images/common/fv-img.png" alt="Google広告、Googleマップ広告・集客を自動化、見える化">
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+    <div class="fv__cta--wrapper">
+      <div class="fv__cta">
+        <a href="https://forms.gle/w9KUTrYCgfQRexJLA" target="_blank">
+        <picture>
+      <source srcset="/images/common/CTA.png" media="(min-width:768px)" />
+      <img src="/images/common/cta-sp.png" alt="まずは無料でスタート">
+    </picture>
+  </a>
+    </div>
+  </div>
+    </div>
+
+    <section class="about top__about" id="about">
+      <div class="about__inner inner">
+        <div class="about__contents">
+          <h2 class="about__tittle u-mobile">
+            <img src="./images/common/about__tittle.png" alt="TITANとは">
+          </h2>
+          <div class="about__img order2">
+            <img src="/images/common/about__img.png" alt="飲食店の
+            オールインワン集客ツール">
+          </div>
+          <div class="about__content order1">
+            <h2 class="about__tittle u-desktop">
+              <img src="/images/common/about__tittle.png" alt="TITANとは">
+            </h2>
+            <p class="about__text">
+TITAN（タイタン）はGoogle広告、Googleマップ広告・集客を「自動化」し<br>
+広告の新規開設・運用が無料でかんたんに。どなたでもすぐにWeb広告が始められます。<br>
+お店の周辺でピンポイントに『検索での広告』『マップ上での広告』が最適なタイミングで、<br>
+最適な相手に手軽に配信が行えます。<br><br>
+「Web広告なんてわからないことだらけ…怖くて使えない。」<br>
+「自分で広告を頑張ってみたものの結果が出ない。」<br>
+「広告予算が少ないから広告代理店に断られてしまった。」<br>
+そんな全ての飲食店オーナー様の悩みを解消するサービスです。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="point top__point" id="point">
+      <h2 class="section-tittle">TITANで集客できる<br class="u-mobile">３つのポイント</h2>
+      <div class="point__inner inner">
+        <div class="point__contents">
+          <h3 class="point__tittle u-mobile">1．Web広告を自動化</h3>		
+          <div class="point__img order2">
+            <img src="/images/common/point__img.png" alt="検索ページやマップ上に、誰でも簡単にWeb広告ができる。">
+          </div>
+          <div class="about__content order1">
+            <h3 class="point__tittle u-desktop">1．Web広告を自動化</h3>	
+            <h4 class="point__head">検索ページやマップ上に、誰でも簡単にWeb広告ができる。</h4>
+            <p class="point__text">
+              Web広告は誰が運用するかで全く成果が変わります。
+              TITAN（タイタン）ならWeb広告をしたことがない人でも簡単な設定だけで自動で広告を開始してくれます。<br>
+               お店の業種や地域、検索のキーワードなどを選んでいくだけで、あなたのお店にぴったりあった設定が行えます。<br>																							
+              広告の文章の作成は専門スタッフの無料サポートもあり、お店の強みを活かした広告文が設定できます。</p>
+              <div class="btn btn-contact point__btn">
+                <a href="#機能" class="btn-contact__child"><span>機能を詳しくみる<i class="fa-solid fa-chevron-right"></i></span></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="point__contents">
+          <h3 class="point__tittle u-mobile">2．飲食店のオールインワン集客ツール</h3>		
+          <div class="point__img">
+            <img src="/images/common/point2__img.png" alt="お店集客に必要なWeb広告、Googleマップ対策、
+            ホームページ全て無料で始められます">
+          </div>
+          <div class="about__content">
+            <h3 class="point__tittle u-desktop">2．飲食店のオールインワン集客ツール</h3>	
+            <h4 class="point__head">お店集客に必要なWeb広告、Googleマップ対策、<br class="u-desktop">
+              ホームページ全て無料で始められます。</h4>
+            <p class="point__text">
+              TITAN（タイタン）なら広告だけでなく、お店の集客に必要なホームページの作成、Googleマップと集客に必要な機能が揃っています。<br>																														
+              また、数値やレポートもダッシュボードで見やすく、わかりやすいため、<br>							
+              数値に慣れていないオーナー様でもわかりやすく、それぞれの効果を把握することができます。</p>
+              <div class="btn btn-contact point__btn">
+                <a href="#機能_オールインワンツール" class="btn-contact__child"><span>機能を詳しくみる<i class="fa-solid fa-chevron-right"></i></span></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="point__contents">
+          <h3 class="point__tittle u-mobile">3．飲食店広告のプロが開発・徹底サポート</h3>		
+          <div class="point__img order2">
+            <img src="/images/common/point3__img.png" alt="検索ページやマップ上に、誰でも簡単にWeb広告ができる。">
+          </div>
+          <div class="about__content order1">
+            <h3 class="point__tittle u-desktop">3．飲食店広告のプロが開発・徹底サポート</h3>	
+            <h4 class="point__head">開発会社は、創業以来10年以上飲食店専門で広告を運用</h4>
+            <p class="point__text">
+              TITANを開発したオールフィットは飲食店の広告運用支援を	<br class="u-desktop">
+              13年間行ってた、”飲食店集客のプロフェッショナル”。<br><br>
+              
+              これまでのノウハウを使って誰でも簡単に集客ができるよう、開発をしたのがWeb広告自動運用ツール「TITAN」です。<br>
+              長年飲食店のWeb集客を行なってきたノウハウをもとにTITANを使ってあなたのお店の集客を自動化させます。<br><br>
+              
+              初期設定は必ず専門スタッフがオンラインにて、設定方法、使い方を案内させていただきます。また、わからないことがあればTITANサポートまでご連絡ください。<br>
+              チャット/オンラインでサポートさせていただきます。</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="feature top__feature" id="feature">
+      <h2 class="section-tittle">TITANの機能</h2>
+      <div class="feature__inner inner">
+        <div class="feature__contents">
+          <div class="feature__content">
+            <div class="feature__tittle--wrapper">
+              <div class="feature__tittle--wrap">
+            <h3 class="feature__tittle">1．自動化</h3>
+            <p class="feature__text u-desktop">Web広告は”職人仕事”ともいわれる、とても専門性の高い領域です。<br>
+              これまで飲食店の集客をしてきたオールフィットのノウハウを最新のAI技術に落とし込み、<br class="u-desktop">誰でも自動で集客できる仕組みを作りました。</p>
+            </div>
+            <div class="feature__icon">
+              <img src="/images/common/robot.svg" alt="ロボットのアイコン">
+            </div>
+          </div>
+            <p class="feature__text u-mobile">WEB広告は”職人仕事”ともいわれる、とても専門性の高い領域です。<br>
+              これまで13年間の飲食店集客をしてきたオールフィットのノウハウを最新のAI技術に落とし込み、<br class="u-desktop">誰でも自動で集客できる仕組みを作りました。</p>
+          </div>
+          <div class="feature__wrapper">
+            <div class="feature__box">
+              <h3 class="feature__box--tittle">専門スキルの必要な初期設定が<br class="u-mobile">自動で！</h3>
+              <h4 class="feature__box--head u-mobile">１.お店の特徴を入れたら自動設定</h4>
+              <div class="feature__box--wrap">
+                <div class="feature__box--icon">
+                <img src="/images/common/gear.svg" alt="gearの画像">
+              </div>
+                <p class="feature__box--text"><span class="u-desktop">１.お店の特徴を入れたら自動設定</span>お店の業態や、来てほしいお客さんなどを指定することで、自動で広告を出すことができます。</p>
+            </div>
+              <h4 class="feature__box--head u-mobile">2.最適な広告文を作成</h4>
+              <div class="feature__box--wrap">
+                <div class="feature__box--icon">
+                <img src="/images/common/AdSense.svg" alt="広告の画像">
+              </div>
+              <p class="feature__box--text"><span class="u-desktop">2.最適な広告文を作成</span>これまでの広告運用データにより、”最適な広告文”を作成することができます。</p>
+              </div>
+            </div>
+            <div class="feature__box">
+              <h3 class="feature__box--tittle">職人芸ともいわれるWeb広告運用がAIで自動最適化</h3>
+              <h4 class="feature__box--head u-mobile">1.専門的なWeb広告を誰でもプロレベル</h4>
+              <div class="feature__box--wrap">
+                <div class="feature__box--icon">
+                <img src="/images/common/AI.svg" alt="AIの画像">
+                </div>
+                <p class="feature__box--text"><span class="u-desktop">1.専門的なWEB広告を誰でもプロレベル</span>プロの運用マンが運用するのと変わらないレベルでAIが自動で広告運用を実現してくれます。</p>
+              </div>
+              <h4 class="feature__box--head u-mobile">2.季節に合わせて設定変更もかんたん</h4>
+              <div class="feature__box--wrap">
+                <div class="feature__box--icon">
+                <img src="/images/common/edit.svg" alt="管理画面の画像">
+                </div>
+                <p class="feature__box--text"><span class="u-desktop">2.季節に合わせて設定変更も可能</span><br class="u-desktop">季節によって訴求する内容も変更することも可能！そのとき欲しいお客さんを難しい設定なしで集客！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature__content">
+          <div class="feature__tittle--wrapper">
+            <div class="feature__tittle--wrap">
+          <h3 class="feature__tittle">2．飲食店のオール<br class="u-mobile">インワン集客ツール</h3>
+          <p class="feature__text u-desktop">TITANなら飲食店のWeb集客に必要なツールがすべて集約！<br>
+            無料で集客に必要なツールはすべて使うことができます。</p>
+            </div>
+          <div class="feature__icon">
+            <img src="/images/common/tool.svg" alt="ツールのアイコン">
+          </div>
+        </div>
+          <p class="feature__text u-mobile">TITANなら飲食店のWEB集客に必要なツールがすべて集約！<br>
+            無料でも集客に必要なツールはすべて使うことができます。</p>
+        </div>
+
+        <div class="feature__wrap">
+          <h4 class="feature__wrap--tittle">ダッシュボード</h4>
+        <div class="feature__img">
+          <img src="/images/common/feature__img.jpg" alt="管理画面の説明画像">
+        </div>
+        <h4 class="feature__wrap--tittle">便利な機能</h4>
+        <ul class="feature__balloon">
+          <li class="feature__balloon--item">WEB広告<br>自動運用</li>
+          <li class="feature__balloon--item">かんたんHP制作<br>管理機能</li>
+          <li class="feature__balloon--item">売上効果測定<br>レポート</li>
+          <li class="feature__balloon--item">Googleマップ<br>初期設定診断</li>
+          <li class="feature__balloon--item">Googleマップ<br>予約投稿<br>口コミ返信</li>
+          <li class="feature__balloon--item">Googleマップ<br>運用代行</li>
+        </ul>
+      </div>
+
+      <div class="feature__content">
+        <div class="feature__tittle--wrapper">
+          <div class="feature__tittle--wrap">
+        <h3 class="feature__tittle">３.飲食店広告のプロ<br class="u-mobile">が開発・徹底サポート</h3>
+        <p class="feature__text u-desktop">飲食店に特化して支援してきたオールフィットが全面サポート。<br>
+          はじめは必ず専属担当が初期設定のサポート、その後もわからないことはすぐにチャットで質問い<br class="u-desktop">ただけます。</p>
+      </div>
+        <div class="feature__icon">
+          <img src="/images/common/women.svg" alt="女性のアイコン">
+        </div>
+      </div>
+        <p class="feature__text u-mobile">13年間飲食店に特化して支援してきたオールフィットが全面サポート。<br>
+          はじめは必ず専属担当が初期設定のサポート、その後もわからないことはすぐにチャットで質問いただけます。</p>
+          <div class="feature__shape"></div>
+      </div>
+      <div class="feature__btn">
+        <a href="https://forms.gle/w9KUTrYCgfQRexJLA" target="_blank">
+          <picture>
+        <source srcset="/images/common/CTA.png" media="(min-width:768px)" />
+        <img src="/images/common/cta-sp.png" alt="まずは無料でスタート">
+      </picture>
+    </a>
+    </div>
+      </div>
+    </section>
+
+    <section class="success top__success" id="success">
+      <h2 class="section-tittle">導入成功事例	</h2>
+      <div class="success__container">
+        <div class="success__inner">
+        <ul class="success-cards" id="success-cards">
+        <li class="success-card">
+          <a href="">
+            <div class="success-card__img">
+            <img src="/images/common/success-card__img.jpg" alt="">
+          </div>
+          <p class="success-card__text">ただ今、準備中です</p>
+          </a>
+          </li>
+          <li class="success-card">
+            <a href="">
+              <div class="success-card__img">
+              <img src="/images/common/success-card__img.jpg" alt="">
+            </div>
+            <p class="success-card__text">ただ今、準備中です</p>
+            </a>
+            </li>
+            <li class="success-card">
+              <a href="">
+                <div class="success-card__img">
+                <img src="/images/common/success-card__img.jpg" alt="">
+              </div>
+              <p class="success-card__text">ただ今、準備中です</p>
+              </a>
+              </li>
+        </ul>
+      </div>
+    </div>
+    </section>
+
+    <section class="plan top__plan" id="plan">
+      <h2 class="section-tittle">利用プラン</h2>
+      <div class="plan__inner inner">
+        <div class="plan__contents">
+          <div class="plan__content u-desktop">
+            <ul class="plan__items">
+              <li class="plan__item">
+                <img src="./images/common/plan-free.png" alt="フリー">
+                <p class="plan__text u-mobile">
+                  ※1　広告は３ヶ月以内にスタートいたします。<br><br>
+                  ※2　タグの埋め込みは別途費用を頂戴いたします。<br><br>
+                  ※3　オンライン相談は月に1回1時間までとさせていただきます。<br><br>
+                  ■　ドメイン費用は実費でご負担いただきます。
+                </p>
+              </li>
+              <li class="plan__item">
+                <img src="./images/common/plan-light.png" alt="ライト">
+              </li>
+              <li class="plan__item">
+                <img src="./images/common/plan-premium.png" alt="プレミアム">
+              </li>
+              <li class="plan__item">
+                <img src="./images/common/plan-omakase.png" alt="おまかせ">
+              </li>
+            </ul>
+            <p class="plan__text">
+              ※1　広告は３ヶ月以内にスタートいたします。<br><br>
+              ※2　タグの埋め込みは別途費用を頂戴いたします。<br><br>
+              ※3　オンライン相談は月に1回1時間までとさせていただきます。<br><br>
+               ■　  ドメイン費用は実費でご負担いただきます。
+            </p>
+          </div>
+
+          <div class="plan__content u-mobile">
+            <ul class="plan__items">
+              <li class="plan__item plan__item--angle">
+                <img class="switch switch1" src="./images/common/plan-free-sp.png" alt="フリー">
+                <img class="switch-down" src="/images/common/plan-free-down.png" alt="フリー">
+                <div class="plan__angle--content">
+                <div class="plan__angle">
+                  <div class="plan__angle--locate locate1">
+                  </div>
+              </div>
+            </div>
+                <p class="plan__text">
+                  ※1　広告は３ヶ月以内にスタートいたします。<br><br>
+                  ※2　タグの埋め込みは別途費用を頂戴いたします。<br><br>
+                  ※3　オンライン相談は月に1回1時間までとさせていただきます。<br><br>
+                  ■　ドメイン費用は実費でご負担いただきます。
+                </p>
+              </li>
+              <li class="plan__item plan__item--angle">
+                <img class="switch switch2" src="/images/common/plan-light-sp.png" alt="ライト">
+                <img class="switch-down" src="/images/common/plan-light-down.png" alt="ライト">
+                <div class="plan__angle--content">
+                <div class="plan__angle">
+                  <div class="plan__angle--locate locate2">
+                  </div>
+              </div>
+            </div>
+              </li>
+              <li class="plan__item plan__item--angle">
+                <img class="switch switch3" src="/images/common/plan-premium-sp.png" alt="プレミアム">
+                <img class="switch-down" src="/images/common/plan-premium-down.png" alt="プレミアム">
+                <div class="plan__angle--content">
+                <div class="plan__angle">
+                  <div class="plan__angle--locate locate3">
+                  </div>
+              </div>
+            </div>
+              </li>
+              <li class="plan__item plan__item--angle">
+                <img class="switch switch4" src="/images/common/plan-omakase-sp.png" alt="おまかせ">
+                <img class="switch-down" src="/images/common/plan-omakase-down.png" alt="おまかせ">
+                <div class="plan__angle--content">
+                <div class="plan__angle">
+                  <div class="plan__angle--locate locate4">
+                  </div>
+              </div>
+            </div>
+              </li>
+            </ul>
+            <p class="plan__text u-desktop">
+              ※1　広告は３ヶ月以内にスタートいたします。<br><br>
+              ※2　タグの埋め込みは別途費用を頂戴いたします。<br><br>
+              ※3　オンライン相談は月に1回1時間までとさせていただきます。<br><br>
+               ■　  ドメイン費用は実費でご負担いただきます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="step top__step">
+      <h2 class="section-tittle step__tittle"><span>どうやって申し込む？</span><br>3STEPで<br class="u-mobile">はじめられるTITAN</h2>
+      <div class="step__inner inner">
+        <div class="step__contents">
+          <div class="step__content">
+            <ul class="step__items">
+              <li class="step__item">
+                <h3 class="step__number"><span>STEP</span><br class="u-desktop">01</h3>
+                <p class="step__text"><span>無料お試しからフォームにて必要情報を入力ください！</span><br>
+                  こちらの<a href="https://forms.gle/w9KUTrYCgfQRexJLA" target="_blank">無料お試し</a>から必要情報をご登録ください！</p>
+              </li>
+              <li class="step__item">
+                <h3 class="step__number"><span>STEP</span><br class="u-desktop">02</h3>
+                <p class="step__text"><span>案内のメールより初期設定サポートの日程を決めましょう！</span><br>
+                  無料の初期設定サポートを受ける日にちの調整をさせていただきます。<br>
+                  サポート日程が決まれば、専属担当よりWebミーティングツールを使ってご案内させていただきます！※ご希望によってお電話でも対応可能ですので、ご相談ください。</p>
+              </li>
+              <li class="step__item">
+                <h3 class="step__number"><span>STEP</span><br class="u-desktop">03</h3>
+                <p class="step__text"><span>無料の初期設定サポートを受けましょう！</span><br>
+                  一人一人に専属担当がつくからパソコン操作が苦手でも安心です。<br>
+                  初期設定の案内とTITANに関わる疑問点はすべておまかせください。<br>
+                  設定が終われば、すぐにスタートできますのでまずは無料プランから始めてみましょう。</p>
+              </li>
+            </ul>
+            <div class="step__btn">
+              <a href="https://forms.gle/w9KUTrYCgfQRexJLA" class="btn btn-trial" target="_blank">まずは無料でスタート</a>
+            </div>
+            <div class="step__icon u-desktop">
+              <img src="/images/common/men.svg" alt="男性のアイコン">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq top__faq" id="faq">
+      <h2 class="section-tittle">よくある質問</h2>
+
+      <div class="faq__inner inner">
+        <div class="faq__contents">
+          <div class="faq__content">
+            <ul class="faq__items">
+              <li class="faq__item">
+                <h3 class="faq__tittle"><span>Q.</span> いつまで無料で使えますか？</h3>
+                <p class="faq__text">
+                  TITAN無料プランであれば、基本無料でお使いいただくことができます。<br>※Googleに支払う広告費用と運用手数料はプランによって発生いたします。
+                </p>
+              </li>
+              <li class="faq__item">
+                <h3 class="faq__tittle"><span>Q.</span> 使える機能は増えますか？</h3>
+                <p class="faq__text">
+                  今後も機能を追加していく予定です。<br>
+                  フリープランでお使いいただければ最新情報もお届けいたします。
+                </p>
+              </li>
+              <li class="faq__item">
+                <h3 class="faq__tittle"><span>Q.</span> Webサイトの更新や運用を代行できますか？	</h3>
+                <p class="faq__text">
+                  TITANを運営する株式会社オールフィットにて運用代行のご相談を受け付けております。<br>
+                  <a href="https://forms.gle/w9KUTrYCgfQRexJLA" target="_blank">お問い合わせフォーム</a>、もしくは<a href="tel:050-5499-3014">お電話</a>にてご要望をお伝えください。
+                </p>
+              </li>
+              <li class="faq__item">
+                <h3 class="faq__tittle"><span>Q.</span> 質問や相談にのってくれる窓口はありますか？</h3>
+                <p class="faq__text">
+                  <a href="">ヘルプサイト</a>をご参照ください！<br>
+                  そのほか質問は、チャットにて受け付けております。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <div class="footer__wrapper">
+          <div class="footer__left">
+      <div class="footer__logo">
+        <a href="">
+          <img src="./images/common/TITAN-logo1.svg" alt="TAITAN">
+        </a>
+      </div>
+      <div class="footer__tel">
+        <div class="footer__tel--icon">
+          <img src="/images/common/tel.png" alt="電話のアイコン">
+        </div>
+        <div class="footer__tel--text">
+        <a href="tel:050-5499-3014">050-5499-3014</a>
+        <p>受付時間 平日：10:00〜18:00</p>
+      </div>
+       </div>
+      </div>
+      <div class="footer__right">
+       <div class="footer__contents">
+        <div class="footer__content order2">
+          <ul class="footer__menus">
+              <li class="footer__menu">
+                <a href="https://www.all-fit.co.jp/company" target="_blank">会社概要</a>
+              </li>
+              <li class="footer__menu">
+                <a href="">プライバシーポリシー</a>
+              </li>
+              <li class="footer__menu">
+                <a href="">利用規約</a>
+              </li>
+          </ul>
+        </div>
+        <div class="footer__content order1">
+          <ul class="footer__menus">
+            <li class="footer__menu">
+              <a href="#about">TITANとは</a>
+            </li>
+            <li class="footer__menu">
+              <a href="#point">ポイント</a>
+            </li>
+            <li class="footer__menu">
+              <a href="#feature">機能</a>
+            </li>
+            <li class="footer__menu">
+              <a href="#success">導入事例</a>
+            </li>
+            <li class="footer__menu">
+              <a href="#plan">ご利用について</a>
+            </li>
+            <li class="footer__menu">
+              <a href="#faq">よくある質問</a>
+          </ul>
+        </div>
+       </div>
+      </div>
+    </div>
+    </div>
+      <p class="copyright">©︎copyright</p>
+    </footer>
+
+  </main>
+</body>
+</html>

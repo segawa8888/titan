@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.btn {
+  display: inline-block;
+  font-size: rem(22);
+  line-height: calc(32 / 22);
+  font-weight: $bold;
+  width:100%;
+  height:rem(70);
+  text-align:center;
+  border-radius: rem(50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(19) 0;
+  box-shadow: 0px 4px 5px 0px rgba(83, 105, 101, 0.3);
+  @include mq(md) {
+    font-size: rem(16);
+    padding: rem(10) 0;
+  }
+}
+
+.btn-contact {
+	background:$accent-background;
+  max-width:rem(225);
+  min-width:rem(174);
+}
+
+.btn-contact__child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:99%;
+  height:auto;
+  padding:rem(10) rem(30);
+  margin-right: auto;
+  margin-left: auto;
+	background-color: $white;
+  border-radius: rem(50);
+	text-align: center;
+  font-size: rem(16);
+
+  span {
+    background:$accent-background;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  i {
+    margin-left: rem(19.02);
+  }
+}
+
+.btn-trial {
+  background-size: 300% 100%;
+  background:$accent-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:$white;
+  @include mq(md) {
+    max-width:rem(377);
+    min-width: rem(190);
+    padding:rem(19) 0;
+    font-size: rem(24);
+  }
+}

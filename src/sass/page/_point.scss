@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.point {
+    background-color: $base;
+}
+
+.top__point {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+    @include mq(md) {
+        padding-top: rem(80);
+        padding-bottom: rem(31);
+    }
+}
+
+.point__contents {
+    margin-top: rem(68);
+    @include mq(md) {
+        margin-top: rem(94);
+        display: flex;
+        gap:0 rem(50);
+    }
+}
+
+.point__tittle {
+    font-size: rem(24);
+    line-height: calc(35 / 24);
+    color:$main;
+    font-weight: $bold;
+    @include mq(md) {
+        font-size: rem(30);
+        line-height: initial;
+    }
+}
+
+.point__img {
+    margin-top: rem(20);
+    width:rem(195.72);
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(md) {
+        max-width: rem(375);
+        min-width:rem(375);
+        margin-left: initial;
+        margin-right: initial;
+        margin-top: 0;
+    }
+}
+
+.point__head {
+    margin-top: rem(20);
+    font-size: rem(18);
+    line-height:1.8;
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
+
+.point__text {
+    margin-top: rem(20);
+    font-size: rem(16);
+    line-height: 1.8;
+}
+
+.point__btn {
+    margin-top: rem(30);
+    height:rem(46);
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(md) {
+        margin-right: initial;
+    }
+}

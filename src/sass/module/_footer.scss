@@ -1,0 +1,125 @@
+@use "global" as *;
+
+.footer {
+    background: $gradient-background;
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    @include mq(md) {
+        padding-top: rem(60);
+    }
+}
+
+.footer__inner {
+    @include mq(md) {
+        max-width: rem(1037);
+    }
+}
+
+.footer__wrapper {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__logo {
+    width:rem(103.09);
+    @include mq(md) {
+        width:rem(184.09);
+    }
+}
+
+.footer__tel {
+    display: flex;
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(34);
+    }
+}
+
+.footer__tel--icon {
+    width:rem(30);
+    margin-top: rem(5);
+    @include mq(md) {
+        width:rem(32)
+    }
+}
+
+.footer__tel--text {
+
+    a {
+        font-size: rem(18);
+        font-weight: $bold;
+        line-height: calc(26 / 18);
+        @include mq(md) {
+            font-size: rem(24);
+        }
+    }
+
+    p {
+        font-size: rem(12);
+        font-weight: $medium;
+        @include mq(md) {
+            font-size: rem(14);
+        }
+    }
+}
+
+.footer__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: rem(20);
+    @include mq(md) {
+        display: grid;
+        justify-items: end;
+    }
+}
+
+.footer__contents .order2 {
+    @include mq(md) {
+        margin-top: rem(40);
+
+        a {
+            font-size: rem(12);
+        }
+    }
+}
+
+.footer__content .order2 .footer__menu:nth-child(n+2) {
+    @include mq(md) {
+        margin-left: rem(30);
+    }
+}
+
+.footer__menus {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.footer__menu {
+    font-size: rem(13);
+    font-weight: $medium;
+    line-height: calc(19 / 13);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+
+.footer__menu:nth-child(n+2) {
+    margin-top: rem(8);
+    @include mq(md) {
+        margin-top: 0;
+        margin-left: rem(20);
+    }
+}
+
+.copyright {
+    margin-top: rem(50);
+    text-align: center;
+    font-size: rem(12);
+    font-weight: $medium;
+    line-height: calc(17 / 12);
+}

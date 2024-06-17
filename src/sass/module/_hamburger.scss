@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.hamburger {
+    padding: rem(10);
+}
+
+.hamburger span {
+    display: block;
+    width:rem(26);
+    height:rem(2);
+    background-color: $black;
+    transition:.3s
+}
+
+.hamburger.open {
+    position:fixed;
+    top:rem(15);
+    right:rem(20);
+}
+
+.hamburger span:nth-child(2) {
+    margin:rem(6) 0;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform:translate(3px,-1px) rotate(45deg);
+    //左を起点に1本線を設置
+    transform-origin: left;
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform:translate(3px,1px) rotate(-45deg);
+    //左を起点に1本線を設置
+    transform-origin: left; 
+}

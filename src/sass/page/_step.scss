@@ -1,0 +1,118 @@
+@use "global" as *;
+
+.step {
+    background-color: $base;
+}
+
+.top__step {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+    @include mq(md) {
+        padding-top: rem(80);
+    }
+}
+
+.step__tittle {
+    margin-top: rem(12);
+    @include mq(md) {
+        margin-top: rem(8);
+    }
+}
+
+.step__inner {
+    max-width: rem(960);
+}
+
+.step__contents {
+    margin-top: rem(65);
+}
+
+.step__content {
+    @include mq(md) {
+        position: relative;
+    }
+}
+
+.step__item {
+    @include mq(md) {
+        display: flex;
+        height:rem(180);
+    }
+}
+
+.step__item:nth-child(n+2) {
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.step__number {
+    background-color: $main;
+    color:$white;
+    font-weight: $bold;
+    text-align: center;
+    font-size: rem(40);
+    line-height: calc(58 / 40);
+    @include mq(md) {
+        width:rem(160);
+        font-size: rem(50);
+    }
+
+    span {
+        font-size: rem(22);
+        margin-right: rem(7);
+        letter-spacing: 1.5px;
+        @include mq(md) {
+            margin-left: 0;
+        }
+    }
+}
+
+.step__text {
+    background-color: $white;
+    padding: rem(24);
+    font-weight: $regular;
+    box-shadow: rem(2) rem(4) rem(10) rem(2) rgba(0, 0, 0, 0.25);
+    @include mq(md) {
+        width:rem(800);
+        font-size: rem(16);
+    }
+
+    a {
+        color:#0F48D9;
+        font-weight: $bold;
+        border-bottom: 1px solid #0F48D9;
+    }
+
+    span {
+        font-size: rem(18);
+        font-weight: $bold;
+        line-height: 1.8;
+        display: block;
+        @include mq(md) {
+            font-size: rem(20);
+        }
+    }
+}
+
+.step__btn {
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(80);
+
+        .btn-trial {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.step__icon {
+    @include mq(md) {
+        position: absolute;
+        bottom:rem(31);
+        right:rem(-55);
+        max-width: rem(153);
+    }
+}

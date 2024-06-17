@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.top__about {
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+    @include mq(md) {
+        padding-top: rem(60);
+        padding-bottom: rem(60);
+    }
+}
+
+.about__contents {
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.about__tittle {
+    width:rem(247);
+    margin-right: auto;
+    margin-left: auto;
+    @include mq(md) {
+        width:rem(367);
+        margin-left: initial;
+    }
+}
+
+.about__img {
+    margin-top: rem(40);
+    @include mq(md) {
+        max-width: rem(367);
+        margin-top: rem(80);
+    }
+}
+
+.about__text {
+    margin-top: rem(30);
+    font-size: rem(16);
+    line-height: 1.8;
+}

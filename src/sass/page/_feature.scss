@@ -1,0 +1,229 @@
+@use "global" as *;
+
+.feature {
+    background-color: #FAFAFA;
+}
+
+.top__feature {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+    @include mq(md) {
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
+}
+
+.feature__contents {
+    margin-top: rem(68);
+}
+
+.feature__content:nth-child(n+2) {
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(60);
+    }
+}
+
+.feature__tittle--wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__tittle {
+    color:$main;
+    font-size: rem(24);
+    line-height: calc(35 / 24);
+    @include mq(md) {
+        font-size: rem(30);
+        line-height: calc(43 / 30);
+
+    }
+}
+
+.feature__icon {
+    width:rem(80.05);
+    @include mq(md) {
+        width:rem(145);
+        margin-right: rem(123);
+    }
+}
+
+.feature__text {
+    margin-top: rem(20);
+    font-size: rem(16);
+    line-height:1.8;
+}
+
+.feature__wrapper {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.feature__box {
+    background-color: #FEFEFE;
+    border-radius: rem(15);
+    box-shadow: rem(2) rem(4) rem(10) rem(2) rgba(0, 0, 0, 0.25);
+    padding: rem(30);
+    margin-top: rem(40);
+    @include mq(md) {
+        max-width: rem(480);
+        padding:rem(40) rem(27) rem(40) rem(39);
+    }
+}
+
+.feature__box--tittle {
+    font-size: rem(18);
+    line-height: 1.8;
+    color:$main;
+    font-weight: $bold;
+    @include mq(md) {
+        max-width:rem(363);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: rem(70);
+    }
+}
+
+.feature__box--head {
+    margin-top: rem(20);
+    font-size: rem(16);
+    line-height: 1.8;
+}
+
+.feature__box--wrap {
+    display: flex;
+}
+
+.feature__box--wrap:nth-child(n+2) {
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.feature__box--icon {
+    min-width:rem(50);
+    max-width: rem(50);
+    @include mq(md) {
+        max-width: rem(80);
+    }
+}
+
+.feature__box--text {
+    font-size: rem(16);
+    line-height: 1.8;
+    flex:1;
+    margin-left: rem(15);
+    @include mq(md) {
+        margin-left: rem(46);
+    }
+
+    span {
+        font-size: rem(16);
+        line-height: 1.8;
+        font-weight: $bold;
+    }
+}
+
+.feature__wrap {
+    margin-top: rem(69);
+}
+
+.feature__wrap--tittle {
+    text-align: center;
+    font-size: rem(20);
+    font-weight: $bold;
+    line-height: 1.8;
+}
+
+.feature__wrap--tittle:nth-child(n+2) {
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(60);
+    }
+}
+
+.feature__img {
+    margin-top: rem(20);
+}
+
+.feature__balloon {
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top: rem(30);
+    @include mq(md) {
+        max-width:rem(760);
+        margin-left: auto;
+        margin-right: auto;
+        gap:0 rem(80);
+    }
+}
+
+.feature__balloon--item {
+    width:rem(150);
+    height:rem(150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: rem(14);
+    font-weight: $bold;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px rem(6) rem(8) 0px rgba(0, 0, 0, 0.25);
+    @include mq(md) {
+        width:rem(200);
+        height:rem(200);
+        font-size: rem(20);
+    }
+}
+
+.feature__balloon--item:nth-child(odd) {
+    background-color: #60D1AB;
+    color:$white;
+}
+
+.feature__balloon--item:nth-child(even) {
+    background-color: $base;
+}
+
+.feature__balloon--item:nth-child(n+3) {
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(45);
+    }
+}
+
+.feature__balloon--item:nth-child(3) {
+    background-color: $base;
+    color:$black;
+    @include mq(md) {
+        background-color: #60D1AB;
+        color:$white;
+    }
+} 
+
+.feature__balloon--item:nth-child(4) {
+    background-color: #60D1AB;
+    color:$white;
+    @include mq(md) {
+        background-color: $base;
+        color:$black;
+    }
+} 
+
+.feature__btn {
+    margin-top: rem(40);
+    @include mq(md) {
+        width:rem(554);
+        margin-left: auto;
+        margin-right: auto;
+        .btn-trial {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@use "global" as *;
+
+.plan {
+    background-color: #FAFAFA;
+}
+
+.top__plan {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+    @include mq(md) {
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
+}
+
+.plan__items {
+    margin-top: rem(66);
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.plan__item:nth-child(n+2) {
+    margin-top: rem(30);
+    @include mq(md) {
+        margin-top: 0;
+        margin-left: rem(10);
+    }
+}
+
+.plan__text {
+    margin-top: rem(30);
+    font-size: rem(12);
+    font-weight: $regular;
+    line-height: calc(17 / 12);
+    @include mq(md) {
+        margin-left: rem(31);
+    }
+}
+
+.plan__item--angle {
+    position:relative;
+}
+
+.plan__angle--content {
+    position:absolute;
+    top:rem(200);
+    right:rem(30);
+}
+
+.plan__angle {
+    /* 背景 */
+    border:2px solid $black;
+    border-radius: 50%;
+    width:rem(30);
+    height:rem(30);
+    cursor: pointer;
+    position:relative;
+}
+
+.plan__angle--locate {
+    /* 1個目の表示で左向きの矢印作成*/
+    content: '';
+    /* 親要素（border1の背景）からポジショニングする */
+    position: absolute;
+    top:rem(7.5);
+    left:rem(7.5);
+    /* 線の書式 */
+    border-top: 3px solid $black;
+    border-left: 3px solid $black;
+    /* 線の長さ */
+    width: rem(10);
+    height: rem(10);
+    /* 回転度 */
+    transform: rotate(225deg);
+    /* 回転スピード */
+    transition: all 0.2s;
+}
+.plan__angle--locate.add{
+    /* 2個目の表示で下向きの矢印作成*/
+    content: '';
+    /* 親要素（border1の背景）からポジショニングする */
+    position: absolute;
+    top:rem(9.5);
+    left:rem(7.5);
+    /* 線の書式 */
+    border-top: 3px solid $black;
+    border-left: 3px solid $black;
+    /* 線の長さ */
+    width: rem(10);
+    height: rem(10);
+    /* 回転度 */
+    transform: rotate(45deg);
+    /* 回転スピード */
+    transition: all 0.2s;
+}

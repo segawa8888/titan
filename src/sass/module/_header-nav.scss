@@ -1,0 +1,181 @@
+@use "global" as *;
+
+.header-nav {
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    //高さが400px以下になったときにスクロールする
+    overflow-y: scroll;
+    @include mq(lg) {
+        //解除
+        width: initial;
+        //親要素の高さ引き継ぎ
+        height:inherit;
+        overflow-y: initial;
+        background-color: initial;
+    }
+}
+
+.header-nav__items {
+    height:inherit;
+    display: flex;
+    //縦並び
+    flex-direction: column;
+    justify-content: center;
+    min-height:rem(400);
+    @include mq(lg) {
+        min-height:initial;
+        flex-direction:row;
+    }
+}
+
+.header-nav__item {
+    @include mq(lg) {
+        height: inherit;
+    }
+}
+.header-nav__item:nth-child(n+2) {
+
+    @include mq(lg) {
+        margin-left: rem(5);
+    }
+
+    @include mq(xl) {
+        margin-left: rem(22);
+    }
+}
+
+.header-nav__item a {
+    font-size: rem(18);
+    line-height: calc(22 / 18);
+    display: block;
+    text-align:center;
+    padding: rem(20) 0;
+
+    @include mq(lg) {
+       height:inherit;
+       display: flex;
+       align-items: center;
+       padding: 0;
+       position: relative;
+       font-size: rem(12);
+       font-weight: $medium;
+       line-height: calc(23 / 16);
+       white-space: nowrap;
+    }
+
+    @include mq(xl) {
+        font-size: rem(16);
+    }
+}
+
+.header-nav__item a::before {
+    @include mq(md) {
+        content:'';
+        position: absolute;
+        width: 100%;
+        height: rem(2);
+        background-color: #707070;
+        left:0;
+        bottom:0;
+        transform: scale(0,1);
+        transition:.3s;
+    }
+}
+
+.header-nav__item a:hover {
+    @include mq(md) {
+        opacity:1;
+    }
+}
+
+.header-nav__item a:hover::before {
+    @include mq(md) {
+        transform: scale(1);
+    }
+}
+
+.header-nav__content {
+    display: none;
+    @include mq(lg) {
+        display: flex;
+    }
+}
+
+.header-nav__content--tel a {
+    @include mq(md) {
+        font-size: rem(16);
+        font-weight: $bold;
+        white-space: nowrap;
+    }
+
+    @include mq(xl) {
+        font-size: rem(20);
+    }
+}
+
+.header-nav__content--tel p {
+    @include mq(xl) {
+        font-size: rem(14);
+        font-weight: $medium;
+    }
+
+    @include mq(lg) {
+        font-size: rem(12);
+    }
+}
+
+.header-nav__content--wrapper {
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.header-nav__content--wrap {
+    @include mq(md) {
+        display: flex;
+        min-width:rem(174);
+        justify-content: right;
+    }
+
+    @include mq(xl) {
+        min-width: initial;
+    }
+}
+
+.header-nav__content--icon {
+    @include mq(md) {
+        width:rem(28);
+        margin-top: rem(8);
+    }
+}
+
+.header-nav__contact {
+    @include mq(md) {
+        display: flex;
+
+    .btn-contact {
+        margin-left: rem(20);
+        height:rem(45);
+    }
+
+    .btn-trial {
+        margin-left: rem(12);
+        height:rem(45);
+        font-size: rem(16);
+    }
+    }
+
+    @include mq(lg) {
+        .btn-contact {
+            margin-left: rem(10);
+            height:rem(45);
+        }
+    
+        .btn-trial {
+            margin-left: rem(8);
+            height:rem(45);
+            font-size: rem(16);
+        } 
+    } 
+}

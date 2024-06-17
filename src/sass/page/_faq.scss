@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.faq {
+    background-color: #FAFAFA;
+}
+
+.top__faq {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+    @include mq(md) {
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
+}
+
+.faq__inner {
+    @include mq(md) {
+        max-width: rem(960);
+    }
+}
+
+.faq__contents {
+    margin-top: rem(100);
+}
+
+.faq__item {
+    box-shadow: rem(2) rem(4) rem(10) rem(2) rgba(0, 0, 0, 0.25);
+    border-radius: rem(15);
+}
+
+.faq__item:nth-child(n+2) {
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(30);
+    }
+}
+
+.faq__tittle {
+    font-size: rem(18);
+    font-weight: $bold;
+    background-color: $base;
+    text-align: center;
+    border-radius: rem(15) rem(15) 0 0;
+    padding-top: rem(20);
+    padding-left: rem(23);
+    padding-right: rem(22);
+    padding-bottom: rem(24);
+
+    @include mq(md) {
+        padding-left: rem(42);
+        margin-right: rem(15);
+        padding-top: rem(22);
+        padding-bottom: rem(22);
+        text-align: left;
+
+    }
+
+    span {
+        color:$main;
+        margin-right: rem(8); 
+        font-size: rem(20);
+    }
+}
+
+.faq__text {
+    background-color: $white;
+    border-radius: 0 0 rem(15) rem(15);
+    font-size: rem(14);
+    font-weight: $regular;
+    padding-top: rem(20);
+    padding-left: rem(23);
+    padding-right: rem(22);
+    padding-bottom: rem(20);
+    line-height: 1.8;
+    @include mq(md) {
+        padding-left: rem(42);
+
+    }
+
+    a {
+        color:#0F48D9;
+        font-weight: $bold;
+        border-bottom: 1px solid #0F48D9;
+    }
+}

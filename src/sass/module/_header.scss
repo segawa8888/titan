@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.header {
+    background-color: $white;
+    height:rem(66);
+    // position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 10;
+
+    @include mq(lg) {
+        height:rem(70);
+    }
+}
+
+.header__inner {
+    padding-left: rem(20);
+    padding-right: rem(20);
+    display: flex;
+    align-items: center;
+    //親要素の高さを引き継ぎ
+    height:inherit;
+    justify-content: space-between;
+    @include mq(lg) {
+        padding-left: rem(10);
+        padding-right: rem(10);
+    }
+}
+
+.header__left {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header__logo {
+    height:inherit;
+    width:rem(80);
+    @include mq(md) {
+        width:rem(162);
+    }
+}
+
+.header__logo a {
+    height:inherit;
+    display: flex;
+    align-items: center;
+}
+
+.header__hamburger {
+    position: relative;
+    z-index:20;
+
+    @include mq(lg) {
+        display: none;
+    }
+}
+
+.header__nav {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0; 
+
+    @include mq(lg) {
+        display: block;
+        position:static;
+        margin-left:0;
+        width: 100%;
+    }
+
+    @include mq(xl) {
+        margin-left: rem(52);
+    }
+}

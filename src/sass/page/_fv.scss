@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.fv__wrapper {
+    background: $gradient-background;
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    @include mq(md) {
+        background: initial;
+        background-image: url(/images/common/fv__background.jpg);
+        background-size: cover;
+    }
+}
+
+.fv__content {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.fv__tittle {
+    @include mq(md) {
+        width:rem(544);
+    }
+}
+
+.fv__img {
+    @include mq(md) {
+        width:rem(632.57);
+        margin-left: rem(127);
+    }
+}
+
+.fv__btn {
+    margin-top: rem(24);
+
+    .btn-trial {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.fv__cta--wrapper {
+    background-color: $base;
+    padding:rem(28.22) 0;
+    @include mq(md) {
+        padding:rem(20) 0;
+    }
+
+    img {
+        margin-top: rem(-45);
+    }
+}
+
+.fv__cta {
+    @include mq(md) {
+        max-width: rem(554);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
